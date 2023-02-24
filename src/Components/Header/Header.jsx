@@ -6,7 +6,6 @@ const Header = () => {
     <div className="header-container">
       <img
         className="header-container__logo"
-        style={{ color: 'red' }}
         src={`${process.env.PUBLIC_URL}/logo.png`}
         alt="city-icon"
       />

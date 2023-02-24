@@ -1,7 +1,13 @@
 .flights-container {
   display: flex;
+  justify-content: center;
   margin-top: 30px;
-  padding: 0 50px;
+  // padding: 0 50px;
+}
+
+.flights__buttons {
+  display: flex;
+  width: 100%;
 }
 
 .flights-btn {
@@ -18,4 +24,13 @@
   font-size: 24px;
   font-weight: 600;
   line-height: 60px;
+}
+
+.btn {
+  width: 50%;
+}
+
+.btn-active {
+  color: #1eb7ee;
+  background-color: #fff;
 }

@@ -1,0 +1,48 @@
+.table {
+  background-color: #fff;
+}
+
+.terminal {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+.flights-list-container {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #fff;
+}
+
+.table__header {
+  color: #95989a;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0.75rem;
+  height: 48px;
+  white-space: nowrap;
+  text-align: left;
+}
+.table__row {
+  line-height: 50px;
+}
+
+.table__row:hover {
+  box-shadow: 0px 0px 4px 2px #00141b1a;
+}
+.table__row:nth-child(odd) {
+  background-color: #0066871a;
+}
+
+.table__row td {
+  /* padding: 0.75rem; */
+}

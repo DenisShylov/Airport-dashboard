@@ -1,0 +1,59 @@
+.dates-img__calendar {
+  width: 40px;
+  padding: 5px;
+  background: #1eb7ee;
+}
+
+.dates-container {
+  display: flex;
+  padding: 10px 0;
+  background: #fff;
+  padding-left: 20px;
+}
+
+.dates_wrapper {
+  display: flex;
+  flex-direction: row;
+  color: #b8b9b9;
+  margin-left: 30px;
+  width: 300px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 3px solid #d0d0d0;
+  flex-basis: 33.33333%;
+  max-width: 33.33333%;
+}
+
+.date-num {
+  font-size: 12px;
+  margin-bottom: 5px;
+  margin: auto;
+}
+
+.date-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.selected-day {
+  border-bottom: 3px solid #1eb7ee;
+}
+
+.dates-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dates-date {
+  font-size: 14px;
+  color: #1eb7ee;
+  font-weight: 600;
+}

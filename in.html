@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>test-air</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #e7efec;
+      }
+
+      .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+      }
+
+      .header {
+        margin-bottom: 150px;
+        box-shadow: 0px 1px 14px 0px grey;
+        background-color: #1eb7ee;
+        width: 100%;
+      }
+
+      .header img {
+        padding: 10px;
+      }
+
+      .search {
+        display: flex;
+        justify-content: center;
+      }
+
+      .search__group {
+        display: flex;
+        align-items: center;
+      }
+
+      .search__group img {
+        width: 80px;
+      }
+
+      input {
+        border: none;
+        outline: none;
+        height: 80px;
+        width: 400px;
+      }
+
+      .search__btn {
+        border: none;
+        height: 80px;
+        width: 200px;
+        border-radius: 0 80px 0 0;
+        background: #1eb7ee;
+        color: #fff;
+        text-transform: uppercase;
+      }
+      .search__result-container {
+        display: flex;
+        justify-content: center;
+      }
+      .search__result {
+        display: flex;
+        /* margin-left: 230px; */
+        margin-top: 30px;
+      }
+      .btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+      }
+
+      .btn a {
+        text-align: end;
+        border-radius: 80px 80px 0 0;
+        background: #1eb7ee;
+        padding: 25px;
+        width: 500px;
+        padding-right: 100px;
+        margin-right: -108px;
+        z-index: 2;
+        background: #fff;
+      }
+
+      .search__result-container {
+        display: flex;
+        /* justify-content: center; */
+        background: #fff;
+        /* margin: 0px 118px; */
+        padding: 0 600px 0 0;
+      }
+
+      .search__result {
+        display: flex;
+        /* margin-left: 230px; */
+        margin-left: 30px;
+        justify-content: flex-start;
+        padding: 20px 0;
+      }
+      .search__result img {
+        width: 40px;
+        background: aqua;
+      }
+
+      .wrap-search {
+        display: flex;
+        border-bottom: 3px solid;
+      }
+      .dates {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        align-items: center;
+        border-bottom: 3px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="header">
+        <img src="./public/logo.png" alt="" />
+      </section>
+
+      <section class="search">
+        <div class="search__group">
+          <img src="./public/calendar.svg" alt="" />
+          <input type="text" value="search" />
+          <button class="search__btn">Search</button>
+        </div>
+      </section>
+
+      <div class="btn">
+        <a>ВЫЛЕТ</a>
+        <a>ПРИЛЕТ</a>
+      </div>
+      <section class="search__result-container">
+        <div class="search__result">
+          <img src="./public/calendar.svg" alt="" />
+          <div class="wrap-search">
+            <div class="dates">
+              <span>15/02</span>
+              <span>вчера</span>
+            </div>
+            <div class="dates">
+              <span>16/02</span>
+              <span>сегодня</span>
+            </div>
+            <div class="dates">
+              <span>17/02</span>
+              <span>завтра</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

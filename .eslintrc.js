@@ -17,6 +17,12 @@ module.exports = {
     'arrow-body-style': ['off'],
     'linebreak-style': ['off'],
     'react/button-has-type': ['off'],
+    indent: ['off'],
+    'react/jsx-indent': ['off'],
+    'jsx-a11y/click-events-have-key-events': ['off'],
+    'jsx-a11y/no-noninteractive-element-interactions': ['off'],
+    'jsx-a11y/no-static-element-interactions': ['off'],
+    'no-dupe-keys': ['off'],
     semi: ['off'],
   },
 };

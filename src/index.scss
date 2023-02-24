@@ -15,3 +15,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #e7efec;
 }
+
+.page-container {
+  display: flex;
+  max-width: 1140px;
+  margin: auto;
+  flex-direction: column;
+}
