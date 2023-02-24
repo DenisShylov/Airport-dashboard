@@ -16,8 +16,6 @@ const FlightsTable = () => {
   const isFetching = useSelector(getValueIsFetching);
   const flightsList = useSelector(FlightsListSelector);
 
-  console.log(flightsList);
-
   if (isFetching) {
     return <div>Spinner</div>;
   }
