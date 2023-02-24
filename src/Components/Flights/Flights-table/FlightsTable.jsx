@@ -35,10 +35,10 @@ const FlightsTable = () => {
         </tr>
       </thead>
       <tbody>
-        {flightsList.body.departure.length === 0 ? (
+        {flightsList?.body.departure.length === 0 ? (
           <FlightsNotFound />
         ) : (
-          flightsList.body.departure.map((item) => (
+          flightsList?.body.departure.map((item) => (
             <tr className="table__row">
               <td
                 style={

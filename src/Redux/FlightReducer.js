@@ -1,7 +1,12 @@
 import { GET_CURRENT_DATE, GET_FLIGHTS_LIST } from './FlightActions';
 
 const initialState = {
-  flightList: [],
+  flightList: {
+    body: {
+      departure: [],
+      arrival: [],
+    },
+  },
   currentDate: new Date(),
   isFetching: false,
 };
