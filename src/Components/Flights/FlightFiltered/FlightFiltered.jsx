@@ -1,35 +1,19 @@
-import moment from 'moment/moment';
+import moment from 'moment';
 import React from 'react';
 import { useSelector } from 'react-redux';
-import {
-  FlightsListSelector,
-  getValueIsFetching,
-} from '../../../Redux/FlightSelectors';
-import Spinner from '../../Spinner/Spinner';
+import { getFilteredData } from '../../../Redux/FlightSelectors';
 import FlightsNotFound from '../Flights-not-found/FlightsNotFound';
+import {
+  TERMINAL_A_STYLES,
+  TERMINAL_D_STYLES,
+} from '../Flights-table/FlightsTable';
 
-import './FlightsTable.css';
-
-export const TERMINAL_A_STYLES = {
-  color: '#63c745',
-  border: '1px solid #63c745',
-};
-export const TERMINAL_D_STYLES = {
-  color: '#1eb7ee',
-  border: '1px solid #1eb7ee',
-};
-
-const FlightsTable = () => {
-  const isFetching = useSelector(getValueIsFetching);
-  const flightsList = useSelector(FlightsListSelector);
-  if (isFetching) {
-    return <Spinner />;
-  }
+const FlightFiltered = () => {
+  const filteredData = useSelector(getFilteredData);
   return (
     // eslint-disable-next-line react/jsx-no-useless-fragment
     <>
-      {/* {isFetching && <Spinner />} */}
-      {flightsList.body.departure.length === 0 ? (
+      {filteredData.length === 0 ? (
         <FlightsNotFound />
       ) : (
         <table className="flights-list-container">
@@ -44,7 +28,7 @@ const FlightsTable = () => {
             </tr>
           </thead>
           <tbody>
-            {flightsList?.body.departure.map((item) => (
+            {filteredData.map((item) => (
               <tr className="table__row">
                 <td
                   style={
@@ -79,4 +63,4 @@ const FlightsTable = () => {
   );
 };
 
-export default FlightsTable;
+export default FlightFiltered;
