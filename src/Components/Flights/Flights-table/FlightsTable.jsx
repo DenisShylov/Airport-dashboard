@@ -5,14 +5,13 @@ import { useLocation } from 'react-router-dom';
 import { FlightsListSelector, getValueIsFetching } from '../../../Redux/FlightSelectors';
 import Spinner from '../../Spinner/Spinner';
 import FlightsNotFound from '../Flights-not-found/FlightsNotFound';
-
 import './FlightsTable.scss';
 
-export const TERMINAL_A_STYLES = {
+const TERMINAL_A_STYLES = {
   color: '#63c745',
   border: '1px solid #63c745'
 };
-export const TERMINAL_D_STYLES = {
+const TERMINAL_D_STYLES = {
   color: '#1eb7ee',
   border: '1px solid #1eb7ee'
 };
