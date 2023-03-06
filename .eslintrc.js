@@ -1,13 +1,13 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
+    es2021: true
   },
   extends: ['eslint-config-airbnb'],
   overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module',
+    sourceType: 'module'
   },
   plugins: ['react'],
   rules: {
@@ -23,6 +23,8 @@ module.exports = {
     'jsx-a11y/no-noninteractive-element-interactions': ['off'],
     'jsx-a11y/no-static-element-interactions': ['off'],
     'no-dupe-keys': ['off'],
-    semi: ['off'],
-  },
+    'react/jsx-closing-bracket-location': ['off'],
+    'operator-linebreak': ['off'],
+    semi: ['off']
+  }
 };

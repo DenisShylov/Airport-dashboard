@@ -1,22 +1,22 @@
 import {
-  GET_CURRENT_DATE,
+  // GET_CURRENT_DATE,
   GET_FLIGHTS_LIST,
   GET_SEARCH_FLIGHT,
   SHOW_SPINNER,
-  SHOW_CALENDAR,
+  SHOW_CALENDAR
 } from './FlightActions';
 
 const initialState = {
   flightList: {
     body: {
       departure: [],
-      arrival: [],
-    },
+      arrival: []
+    }
   },
   searchFlight: [],
-  currentDate: new Date(),
+  // currentDate: new Date(),
   showCalendar: false,
-  isFetching: false,
+  isFetching: false
 };
 
 // eslint-disable-next-line default-param-last
@@ -29,16 +29,16 @@ const FlightReducer = (state = initialState, action) => {
         ...state,
 
         flightList: action.payload,
-        isFetching: false,
+        isFetching: false
       };
 
-    case GET_CURRENT_DATE:
-      return {
-        ...state,
+    // case GET_CURRENT_DATE:
+    //   return {
+    //     ...state,
 
-        currentDate: action.payload,
-        isFetching: false,
-      };
+    //     currentDate: action.payload,
+    //     isFetching: false,
+    //   };
 
     case SHOW_CALENDAR:
       return { ...state, showCalendar: !state.showCalendar };

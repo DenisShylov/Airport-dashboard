@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux';
 import FlightFiltered from '../Components/Flights/FlightFiltered/FlightFiltered';
 import FlightsButtons from '../Components/Flights/Flights-buttons/FlightsButtons';
 import FlightsDates from '../Components/Flights/Flights-dates/FlightsDates';
-// import FlightsNotFound from '../Components/Flights/Flights-not-found/FlightsNotFound';
 import FlightsTable from '../Components/Flights/Flights-table/FlightsTable';
 import Header from '../Components/Header/Header';
 import Search from '../Components/Search/Search';
@@ -20,8 +19,6 @@ const Main = () => {
       <section className="table">
         {filteredData.length > 0 ? <FlightFiltered /> : <FlightsTable />}
       </section>
-
-      {/* <FlightsNotFound /> */}
     </>
   );
 };

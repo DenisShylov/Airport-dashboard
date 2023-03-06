@@ -1,21 +1,22 @@
 import React from 'react';
-// import { NavLink } from 'react-router-dom';
+import { NavLink, useSearchParams } from 'react-router-dom';
 import './FlightsButtons.scss';
 
 const FlightsButtons = () => {
+  const [searchParams] = useSearchParams();
   return (
     <div className="flights-container">
       <div className="flights__buttons">
-        <a href="/departures" className="btn buttons-departures">
-          <button className="flights-btn" type="button">
-            Вылет
-          </button>
-        </a>
-        <a href="/arrivals" className="btn buttons-arrivals">
-          <button className="flights-btn" type="button">
-            Прилет
-          </button>
-        </a>
+        <NavLink
+          to={`/departures?date=10-11-2021&search=${searchParams.get('search')}`}
+          className="btn buttons-departures">
+          {'виліт'.toUpperCase()}
+        </NavLink>
+        <NavLink
+          to={`/arrivals?date=10-11-2021&search=${searchParams.get('search')}`}
+          className="btn buttons-arrivals">
+          {'приліт'.toUpperCase()}
+        </NavLink>
       </div>
     </div>
   );

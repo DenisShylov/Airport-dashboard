@@ -1,5 +1,5 @@
 import React from 'react';
-import './FlightsNotFound.css';
+import './FlightsNotFound.scss';
 
 const FlightsNotFound = () => {
   return (

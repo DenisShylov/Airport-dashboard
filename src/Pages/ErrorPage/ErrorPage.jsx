@@ -1,5 +1,5 @@
 import React from 'react';
-import './ErrorPage.css';
+import './ErrorPage.scss';
 
 const ErrorPage = () => {
   return <div className="Error">URL NOT FOUND</div>;

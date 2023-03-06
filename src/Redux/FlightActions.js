@@ -2,7 +2,7 @@ import flyFetching from '../Gateways/FlightsAPI';
 
 export const SHOW_SPINNER = 'SHOW_SPINNER';
 export const GET_FLIGHTS_LIST = 'GET_FLIGHTS_LIST';
-export const GET_CURRENT_DATE = 'GET_CURRENT_DATE';
+// export const GET_CURRENT_DATE = 'GET_CURRENT_DATE';
 export const GET_SEARCH_FLIGHT = 'GET_SEARCH_FLIGHT';
 export const SHOW_CALENDAR = 'SHOW_CALENDAR';
 
@@ -13,13 +13,13 @@ export const showSpinner = () => {
 export const getList = (data) => {
   return {
     type: GET_FLIGHTS_LIST,
-    payload: data,
+    payload: data
   };
 };
 
-export const getCurrentDate = (date) => {
-  return { type: GET_CURRENT_DATE, payload: date };
-};
+// export const getCurrentDate = (date) => {
+//   return { type: GET_CURRENT_DATE, payload: date };
+// };
 
 export const getFilteredData = (data) => {
   return { type: GET_SEARCH_FLIGHT, payload: data };
@@ -35,5 +35,3 @@ export const fetchDataList = (date) => {
     dispatch(getList(await flyFetching(date).then((data) => data)));
   };
 };
-
-// export const searchFlight = num
